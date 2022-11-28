@@ -4,7 +4,7 @@ const variants = {
     borderColor: "warning",
   },
   danger: {
-    background: "#ED4B9E19",
+    background: "#0d9488",
     borderColor: "failure",
   },
   success: {

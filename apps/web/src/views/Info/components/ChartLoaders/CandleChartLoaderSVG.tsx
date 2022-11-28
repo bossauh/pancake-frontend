@@ -79,7 +79,7 @@ const CandleChartLoaderSVG: React.FC<React.PropsWithChildren<SvgProps>> = (props
           repeatCount="indefinite"
         />
       </rect>
-      <rect width="5%" fill="#ED4B9E">
+      <rect width="5%" fill="#0d9488">
         <animate
           attributeName="height"
           dur="2s"

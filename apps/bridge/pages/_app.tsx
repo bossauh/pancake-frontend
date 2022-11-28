@@ -1,12 +1,11 @@
 import '@pancakeswap/ui/css/reset.css'
-import { PancakeTheme, ResetCSS, dark, light, ModalProvider, UIKitProvider } from '@pancakeswap/uikit'
-import { useEffect, useState } from 'react'
-import { AppProps } from 'next/app'
-import Script from 'next/script'
-import { createGlobalStyle } from 'styled-components'
+import { dark, light, ModalProvider, PancakeTheme, ResetCSS, UIKitProvider } from '@pancakeswap/uikit'
 import { ThemeProvider as NextThemeProvider, useTheme as useNextTheme } from 'next-themes'
+import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { Menu } from '../components/Menu'
+import Script from 'next/script'
+import { useEffect, useState } from 'react'
+import { createGlobalStyle } from 'styled-components'
 
 declare module 'styled-components' {
   /* eslint-disable @typescript-eslint/no-empty-interface */

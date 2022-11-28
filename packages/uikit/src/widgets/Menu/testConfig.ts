@@ -1,17 +1,10 @@
 import noop from "lodash/noop";
-import { LinkStatus } from "./types";
-import { MenuItemsType } from "../../components/MenuItems/types";
 import {
-  SwapIcon,
-  SwapFillIcon,
-  EarnIcon,
-  EarnFillIcon,
-  TrophyIcon,
-  TrophyFillIcon,
-  MoreIcon,
-  DropdownMenuItems,
+  DropdownMenuItems, MoreIcon, SwapFillIcon, SwapIcon
 } from "../../components";
 import { DropdownMenuItemType } from "../../components/DropdownMenu/types";
+import { MenuItemsType } from "../../components/MenuItems/types";
+import { LinkStatus } from "./types";
 
 export const status: { NEW: LinkStatus; SOON: LinkStatus; LIVE: LinkStatus } = {
   LIVE: {
@@ -48,47 +41,6 @@ export const links: MenuItemsType[] = [
         href: "/charts",
         iconName: "Chart",
         isMobileOnly: true,
-      },
-    ],
-  },
-  {
-    label: "Earn",
-    href: "/earn",
-    icon: EarnIcon,
-    fillIcon: EarnFillIcon,
-    items: [
-      {
-        label: "Earn",
-        href: "/earn",
-      },
-      {
-        label: "Yield Farms",
-        href: "/farms",
-      },
-      {
-        label: "Syrup pools",
-        href: "/pools",
-      },
-    ],
-  },
-  {
-    label: "Win",
-    href: "/",
-    icon: TrophyIcon,
-    fillIcon: TrophyFillIcon,
-    items: [
-      {
-        label: "Win",
-        href: "/",
-      },
-      {
-        label: "Predictions",
-        href: "/",
-        status: status.LIVE,
-      },
-      {
-        label: "Lottery",
-        href: "/",
       },
     ],
   },
